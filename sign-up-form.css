@@ -1,0 +1,21 @@
+body, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    display: flex;
+    flex-direction: row;
+}
+.background {
+    padding: 0;
+    height: 100vh;
+    width: 600px;
+    background: url("tomoko-uji-xnU4nWOG0F4-unsplash.jpg") no-repeat;
+    background-size: cover;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    border: solid 2px #333;
+}
