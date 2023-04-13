@@ -8,11 +8,16 @@
     <link rel="stylesheet" href="sign-up-form.css">
 </head>
 <body>
-    <div class="background"></div>
+    <div class="background">
+        <div class="logo">
+            <img id="flowers" src="cherryBlossom.png" alt="logo of tree">
+            <div class="logo-text">Cherry</div>
+        </div>
+    </div>
     <div class="form">
         <div class="paragraph">
             This is not a real online service! You know you need something like this in
-            your life to help you relize your deepest dreams.
+            your life to help you realize your deepest dreams.
             <br>
             Sign up <em>now</em> to get started.
             <br>
@@ -20,30 +25,47 @@
             You <em>know</em> you want to.
         </div>
         <div class="fields">
-            <form id="myform" action="example/path" method="post">
-                <label for="first_name">First Name:</label>
-                <input type="text" id="first_name" placeholder="John">
+            <h4>Let's do this!</h4>
+            <form  class="boxes" id="myform" action="example/path" method="post">
+                <div style="float:left;margin-right:50px;">
+                    <label for="first_name">FIRST NAME</label>
+                    <input type="text" id="first_name" placeholder="John">
+                </div>
 
-                <label for="last_name">Last Name:</label>
-                <input type="text" id="last_name" placeholder="Doe">
+                <div style="float:left">
+                    <label for="last_name">LAST NAME</label>
+                    <input type="text" id="last_name" placeholder="Doe">
+                </div>
+                <br style="clear:both">
                 <br>
+                <div style="float:left;margin-right:50px;">
+                    <label for="user_email">EMAIL</label>
+                    <input type="email" id="user_email" placeholder="abc@def.com">
+                </div>
 
-                <label for="user_email">Email:</label>
-                <input type="email" id="user_email" placeholder="abc@def.com">
-
-                <label for="phone_number">Phone Number:</label>
-                <input type="text" id="phone_number" placeholder="123-456-7890">
+                <div style="float:left">
+                    <label for="phone_number">PHONE NUMBER</label>
+                    <input type="text" id="phone_number" placeholder="123-456-7890">
+                </div>
+                <br style="clear:both">
                 <br>
+                <div style="float:left;margin-right:50px;">
+                    <label for="user_password">PASSWORD</label>
+                    <input type="password" id="user_password">
+                </div>
 
-                <label for="user_password">Password:</label>
-                <input type="password" id="user_password">
-
-                <label for="user_password">Confirm Password:</label>
-                <input type="password" id="user_password">
+                <div style="float:left">
+                    <label for="user_password">CONFIRM PASSWORD</label>
+                    <input type="password" id="user_password">
+                </div>
             </form>
         </div>
         <div class="submit">
-            <input type="submit" form="myform" value="Create Account">
+            <input id="submit-button" type="submit" form="myform" value="Create Account">
+            <div>
+            <br>
+            Already have an account? <a href="example">Log in</a>
+            </div>
         </div>
     </div>
 </body>

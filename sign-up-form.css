@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 body, html {
     margin: 0;
     padding: 0;
 }
 body {
+    font-family: Arial, Helvetica, sans-serif;
     display: flex;
     flex-direction: row;
 }
@@ -13,9 +15,80 @@ body {
     background: url("tomoko-uji-xnU4nWOG0F4-unsplash.jpg") no-repeat;
     background-size: cover;
 }
+.logo {
+    display: flex;
+    align-items: center;
+    height: 125px;
+    margin-top: 300px;
+    padding-top: 50px;
+    background-color: rgba(197, 184, 184, 0.87);
+    gap: 10px;
+}
+img {
+    width: 135px;
+    height: 100px;
+    padding-bottom: 45px;
+    padding-left: 50px;
+}
+.logo-text {
+    font-family: 'Pacifico', cursive;
+    color: white;
+    font-size: 48px;
+    padding-bottom: 45px;
+}
 .form {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    border: solid 2px #333;
+    justify-content: center;
+    gap: 30px;
+    background-color: rgba(241, 234, 234, 0.493);
+    font-size: larger;
+    font-weight: 600;
+    padding-bottom: 200px;
+}
+.boxes {
+    font-size: 10px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    color: #333;
+}
+label, input {
+    display: block;
+}
+.paragraph, .has-account {
+    padding: 50px;
+}
+.fields {
+    display: flex;
+    padding: 50px;
+    flex-direction: column;
+    background: white;
+}
+.submit {
+    padding-left: 50px;
+    font-weight: 500;
+    font-size: smaller;
+}
+#submit-button:hover {
+    background-color: rgb(253, 209, 223);
+}
+#submit-button {
+    padding: 5px;
+    width: 200px;
+    background-color: white;
+    border: 2px solid rgb(253, 209, 223);
+    border-radius: 5px;
+    font-size: 14px;
+}
+input:focus {
+    outline-color: rgb(253, 209, 223);
+}
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+    border-color: rgb(253, 209, 223);
+    box-shadow: 0 1px 1px rgba(253, 209, 223, 0.075) inset, 0 0 8px rgba(253, 209, 223, 0.6);
+    outline: 0 none;
 }
